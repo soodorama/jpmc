@@ -1,0 +1,36 @@
+.lg {
+	font-size:20pt;
+	width:604px;
+	height:302px;
+}
+.sm {
+	font-size:12pt;
+	width:300px;
+	height:150px;
+}
+#leftcol {
+	width: 608px;
+	background:blue;
+	padding: 0;
+	float: left;
+	margin: 0
+}
+#leftcol div {
+	background:lightblue;
+	padding: 0;
+	float: left;
+	margin: 2px
+}
+#rightcol {
+	width: 304px;
+	background: green;
+	padding: 0;
+	float: left;
+	margin: 0
+}
+#rightcol div {
+	background: lightgreen;
+	padding: 0;
+	float: left;
+	margin: 2px;
+}
