@@ -1,5 +1,6 @@
 
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -64,6 +65,9 @@ public class HomeServlet extends HttpServlet {
 			tsv = "failed2";
 			e.printStackTrace();
 		}
+		FileOutputStream f = new FileOutputStream("C:/Users/Collin/jpmc-workspace/workspace/movie_app/WebContent/data.tsv");
+		f.write(tsv.getBytes());
+		f.close();
 		request.setAttribute("tsv", tsv);
 		request.setAttribute("list", list);
 		
